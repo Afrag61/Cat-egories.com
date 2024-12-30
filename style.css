@@ -1,0 +1,274 @@
+html {
+    background-color: black;
+    font-size: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:active{
+    color: #F1CE06;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+/*modal*/
+.backdrop {
+    display: none;
+    position:fixed;
+    background: #00000080;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    background: black;
+    border: 1px solid #F1CE06;
+    padding: 10px;
+    width: 260px;
+    top: 100px;
+    left: calc(50% - 140px);
+    z-index: 1;
+}
+
+.modal h1, p {
+    margin: 0;
+    color: #F1CE06;
+}
+
+.modal button {
+    background: black;
+    color: #F1CE06;
+    border: 1px solid #F1CE06;
+    font: inherit;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.modal button:hover, .modal button:active {
+    background: #F1CE06;
+    color: black;
+    border: 1px solid white;
+}
+
+.modal button:focus {
+    outline: none;
+}
+
+@media(min-width: 400px) {
+    .modal {
+        width: 360px;
+        left: calc(50% - 190px);
+    }
+}
+
+/*form*/
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+    color: #F1CE06;
+}
+
+label {
+    align-self: flex-start;
+    margin-top: 16px;
+    margin-bottom: 5px;
+}
+
+.form-input:hover {
+    background-color: #f8ec95;
+}
+
+.form-input:focus,
+.form-button {
+    outline: none;
+    cursor: pointer;
+}
+
+.form-input {
+    background:white;
+    border: 1px solid black;
+    width: 100%;
+    padding: 3px;
+}
+
+textarea {
+    resize: none;
+    padding: 3px;
+}
+
+.submit-button {
+    margin-top: 5px;
+    padding: 8px;
+    background: #3a0000;
+    color: #947e03;
+}
+
+.submit-button:active,
+.submit-button:hover {
+    cursor: pointer;
+}
+
+.submit-button:focus {
+    outline: none;
+}
+
+/*header*/
+.Fixed-bar {
+    height: 60px;
+}
+
+.Fixed-bar-Link{
+    height: 60px;
+}
+
+.All-Page-title {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #F1CE06;
+    color: black;
+    padding: 10px;
+    margin: 0;
+    text-align:center;
+    font-size: 32px;
+    font-size: 2rem;
+}
+
+.All-Page-title-Link {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #F1CE06;
+    color: black;
+    padding: 10px 0;
+    margin: 0;
+    text-align: center;
+    font-size: 32px;
+    font-size: 2rem;
+}
+
+/*nav*/
+.Navigation {
+    text-align: center;
+    padding: 0;
+}
+
+.Navigation ul {
+    padding: 0;
+}
+
+.Navigation li {
+    display: inline-block;
+    width: 15%;
+    background-color: #F1CE06;
+    font-size: 16px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    border: 1px solid #F1CE06;
+}
+
+.Navigation li, .Navigation ul {
+    :active{
+        background-color: black;
+        color: #F1CE06;
+    }
+}
+
+/*main*/
+
+.picture-text{
+    display: none;
+}
+
+.Pictures{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Pictures img {
+    width:100%;
+    height: 100%;
+}
+
+.Feedback {
+    position: relative;
+    bottom: 18px;
+    background-color: #F1CE06;
+    color: black;
+    text-align: center;
+    margin: 0;
+    font-size: 16px;
+    font-size: 1rem;
+}
+
+/*footer*/
+.Review-clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1px solid #F1CE06;
+    border-radius: 8px;
+    background-color: black;
+    color: #F1CE06;
+    margin: 10px;
+}
+
+.Review-clients img {
+    width: 120px;
+}
+
+.Review-clients p {
+    width: 350px;
+    text-align: center;
+    font-size: 16px;
+    font-size: 1rem;
+}
+
+@media (min-width: 400px){
+    .Navigation,li {
+        font-size: 1.2rem;
+    }
+}
+
+@media(min-width: 700px){
+    .Pictures img {
+        width: 50%;
+    }
+
+    .Picture-text {
+        padding: 0;
+        display: flex;
+    }
+    
+    .Picture-text p {
+        background-color: #F1CE06;
+        color: black;
+        text-align: center;
+        margin: 0;
+        width: 50%;
+        font-size: 16px;
+        font-size: 1rem;
+    }
+}
