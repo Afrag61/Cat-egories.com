@@ -198,18 +198,17 @@ textarea {
 /*main*/
 .container{
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     align-items: center;
+    justify-content: center;
     width: 100%;
-    min-width: 400px;
-    flex-wrap: wrap;
 }
 
 .cont{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     align-items: center;
-    width: 50%;
+    width: 100%;
 }
 
 .cont p{
