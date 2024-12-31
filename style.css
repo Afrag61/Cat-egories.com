@@ -196,35 +196,22 @@ textarea {
 }
 
 /*main*/
-.container{
+
+.picture-text{
+    display: none;
+}
+
+.Pictures{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    min-width: 400px;
     flex-wrap: wrap;
 }
 
-.cont{
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    width: 50%;
-}
-
-.cont p{
-    width: 100%;
-    background-color: #F1CE06;
-    color: black;
-    text-align: center;
-}
-
-.cont img{
-    width: 100%;
+.Pictures img {
+    width:100%;
+    height: 100%;
 }
 
 .Feedback {
-    width: 100%;
     position: relative;
     bottom: 18px;
     background-color: #F1CE06;
@@ -265,7 +252,7 @@ textarea {
     }
 }
 
-/* @media(min-width: 700px){
+@media(min-width: 700px){
     .Pictures img {
         width: 50%;
     }
@@ -284,4 +271,4 @@ textarea {
         font-size: 16px;
         font-size: 1rem;
     }
-} */
+}
